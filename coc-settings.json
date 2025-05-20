@@ -1,0 +1,23 @@
+{
+  "suggest.snippetIndicator": "⮞",
+  "suggest.enablePreselect": true,
+  "signature.enable": true,
+  "go.useLanguageServer": true,
+  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp"],
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [".git/", "compile_commands.json"]
+    },
+    "gopls": {
+      "command": "gopls",
+      "rootPatterns": ["go.work", "go.mod", ".git/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  }
+}
+

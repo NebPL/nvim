@@ -17,6 +17,9 @@ vim.api.nvim_set_keymap('n', 'no', ':noh<CR>', { noremap = true, silent = true }
 
 vim.api.nvim_set_keymap('n', '<leader>e', ':Oil<CR>', { noremap = true, silent = true })
 
+vim.keymap.set("n", "<leader>mc", function()
+  vim.cmd("MultipleCursorsFind")
+end, { desc = "Multiple cursors starten" })
 
 
 
