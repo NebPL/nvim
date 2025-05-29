@@ -7,7 +7,7 @@ return {
     vim.g.copilot_tab_fallback = ""
 
     -- Mappe <leader>v zum Akzeptieren des Vorschlags
-    vim.api.nvim_set_keymap("i", "<leader>v", 'copilot#Accept("<CR>")', { expr = true, silent = true, noremap = true })
+    vim.api.nvim_set_keymap("i", "<tab>", 'copilot#Accept("<CR>")', { expr = true, silent = true, noremap = true })
   end,
 }
 
