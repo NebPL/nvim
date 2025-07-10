@@ -1,9 +1,16 @@
 {
+  "diagnostic.displayByAle": false,
+  "diagnostic.enable": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextPrefix": " | ",
+  "diagnostic.refreshOnInsertMode": true,
+
   "suggest.snippetIndicator": "⮞",
   "suggest.enablePreselect": true,
   "signature.enable": true,
   "go.useLanguageServer": true,
-  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp"],
+  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "python"],
+
   "languageserver": {
     "clangd": {
       "command": "clangd",
@@ -12,12 +19,30 @@
     },
     "gopls": {
       "command": "gopls",
-      "rootPatterns": ["go.work", "go.mod", ".git/"],
       "filetypes": ["go"],
+      "rootPatterns": ["go.work", "go.mod", ".git/"],
       "initializationOptions": {
         "usePlaceholders": true
       }
+    },
+    "pyright": {
+      "command": "pyright-langserver",
+      "args": ["--stdio"],
+      "filetypes": ["python"],
+      "rootPatterns": [".git/", "pyproject.toml", "setup.py", "requirements.txt"],
+      "settings": {
+        "python": {
+          "analysis": {
+            "typeCheckingMode": "basic",
+            "autoSearchPaths": true,
+            "useLibraryCodeForTypes": true
+          }
+        }
+      }
     }
-  }
+  },
+
+  "svelte.enable-ts-plugin": true,
+  "snippets.ultisnips.pythonPrompt": false
 }
 
