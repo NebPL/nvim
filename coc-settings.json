@@ -1,4 +1,14 @@
 {
+  "languageserver": {
+    "tsserver": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["typescript", "typescriptreact", "javascript", "javascriptreact"]
+    }
+  },
+  "eslint.enable": true,
+  "prettier.enable": true,
+
   "diagnostic.displayByAle": false,
   "diagnostic.enable": true,
   "diagnostic.virtualText": true,
