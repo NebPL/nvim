@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 
-
 vim.opt.timeout = false
 --vim.opt.timeoutlen = 150  -- kurz, aber nicht zu kurz (z.B. 150ms)
 
@@ -15,8 +14,11 @@ vim.keymap.set('n', 'r', '^', { noremap = true, silent = true })
 vim.keymap.set('n', 't', '$', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>e', ':Oil<CR>', { silent = true })
 vim.keymap.set('n', '<leader>mc', function() vim.cmd("MultipleCursorsFind") end,
-    { desc = "Multiple cursors starten" })
+  { desc = "Multiple cursors starten" })
 vim.keymap.set('v', 'r', '^', { noremap = true, silent = true })
 vim.keymap.set('v', 't', '$', { noremap = true, silent = true })
 
 vim.keymap.set("x", "R", "r", { noremap = true })
+
+
+
